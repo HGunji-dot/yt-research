@@ -173,7 +173,13 @@ async function main() {
   );
 
   // ④ ジャンル外バズ（登録者10万超 & 再生数が高い）
-  const genreOutlier = seasonal.filter((v) => v.subscriberCount > 100000);
+  // ※ 植木・造園専門チャンネルやベンチマーク対象は除外
+  const GENRE_OUTLIER_EXCLUDE = [
+    "UCN64oPXNfhEvPQJUaIHAEnA", // カーメン君ガーデンチャンネル（ガーデニング専門）
+  ];
+  const genreOutlier = seasonal.filter(
+    (v) => v.subscriberCount > 100000 && !GENRE_OUTLIER_EXCLUDE.includes(v.channelId)
+  );
 
   const output = {
     generatedAt: now.toISOString().slice(0, 16).replace("T", " ") + " UTC",

@@ -178,7 +178,10 @@ async function main() {
     "UCN64oPXNfhEvPQJUaIHAEnA", // カーメン君ガーデンチャンネル（ガーデニング専門）
   ];
   const genreOutlier = seasonal.filter(
-    (v) => v.subscriberCount > 100000 && !GENRE_OUTLIER_EXCLUDE.includes(v.channelId)
+    (v) =>
+      v.subscriberCount > 100000 &&
+      !GENRE_OUTLIER_EXCLUDE.includes(v.channelId) &&
+      v.year >= 2021
   );
 
   const output = {

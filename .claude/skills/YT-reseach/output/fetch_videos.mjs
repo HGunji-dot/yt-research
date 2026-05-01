@@ -64,10 +64,18 @@ async function searchVideos(query, publishedAfter, publishedBefore) {
 
 async function getVideoDetails(ids) {
   if (!ids.length) return [];
-  const params = enc({ key: API_KEY, part: "statistics,snippet", id: ids.join(",") });
+  const params = enc({ key: API_KEY, part: "statistics,snippet,contentDetails", id: ids.join(",") });
   const data = await get(`${BASE}/videos?${params}`);
   if (data.error) { console.error("  [videos error]", data.error.message); return []; }
   return data.items || [];
+}
+
+// ISO 8601 duration (PT1M30S) → 秒数
+function parseDuration(iso) {
+  if (!iso) return 0;
+  const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+  if (!m) return 0;
+  return (parseInt(m[1] || 0) * 3600) + (parseInt(m[2] || 0) * 60) + parseInt(m[3] || 0);
 }
 
 async function getChannelDetails(ids) {
@@ -113,6 +121,7 @@ async function collectPeriod(label, publishedAfter, publishedBefore) {
     const cid = snippet.channelId;
     const subs = channels[cid]?.subscriberCount || 0;
     const views = parseInt(stats.viewCount || "0");
+    const durationSec = parseDuration(v.contentDetails?.duration);
     return {
       videoId: v.id,
       title: snippet.title,
@@ -123,6 +132,8 @@ async function collectPeriod(label, publishedAfter, publishedBefore) {
       viewCountFmt: fmtCount(views),
       subscriberCount: subs,
       subscriberCountFmt: fmtCount(subs),
+      durationSec,
+      isShort: durationSec > 0 && durationSec <= 180,
       url: `https://www.youtube.com/watch?v=${v.id}`,
     };
   });
@@ -188,10 +199,10 @@ async function main() {
 
   const output = {
     generatedAt: now.toISOString().slice(0, 16).replace("T", " ") + " UTC",
-    recent_trending: recent.slice(0, 8),
-    seasonal_popular: seasonal.slice(0, 10),
-    small_channel_buzz: smallChannel.slice(0, 6),
-    genre_outlier_buzz: genreOutlier.slice(0, 6),
+    recent_trending: recent.slice(0, 15),
+    seasonal_popular: seasonal.slice(0, 15),
+    small_channel_buzz: smallChannel.slice(0, 15),
+    genre_outlier_buzz: genreOutlier.slice(0, 15),
   };
 
   fs.writeFileSync("video_data.json", JSON.stringify(output, null, 2), "utf-8");

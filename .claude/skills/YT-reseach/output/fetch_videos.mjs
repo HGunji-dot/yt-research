@@ -144,9 +144,11 @@ async function main() {
     fmt(now)
   );
 
-  // ② 過去7年の同時期（5月1日〜6月10日）
+  // ② 過去5年の同時期（5月1日〜6月10日）※実行年から自動計算
+  const startYear = now.getFullYear() - 5;
+  const endYear = now.getFullYear();
   const seasonalAll = [];
-  for (let year = 2020; year <= 2026; year++) {
+  for (let year = startYear; year <= endYear; year++) {
     const items = await collectPeriod(
       `${year}年5〜6月`,
       `${year}-05-01T00:00:00Z`,

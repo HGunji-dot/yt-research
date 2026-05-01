@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5月30日・6月6日公開 企画立案リサーチ v2｜グリーンロケット</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50" style="font-family:'Noto Sans JP',sans-serif;">
+
+  <header class="bg-gradient-to-r from-green-800 to-green-600 text-white py-8">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xs bg-white/20 px-3 py-1 rounded-full">総合企画立案</span>
+        <span class="text-xs text-green-200">2026年4月30日 作成</span>
+      </div>
+      <h1 class="text-2xl md:text-3xl font-bold">5月30日（土）・6月6日（土）公開<br>動画企画立案リサーチ</h1>
+      <p class="mt-1 text-green-100 text-sm">梅雨前後のトレンド・バズ動画・売れ筋植物を統合した企画ネタ一覧</p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8 space-y-6">
+
+    <!-- 自チャンネル基準データ -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="bar-chart" class="w-5 h-5 text-gray-600"></i>
+        </div>
+        <div>
+          <h2 class="text-base font-bold text-gray-800">自チャンネル 判断基準</h2>
+          <p class="text-xs text-gray-400">競合データを評価するための比較軸 ※YouTube Studioで確認して記入</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-green-50 rounded-lg p-3 text-center border border-green-200">
+          <div class="text-xs text-gray-500 mb-1">登録者数</div>
+          <div class="text-lg font-bold text-green-800">9.7万人</div>
+          <div class="text-xs text-green-600">API取得済み</div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-3 text-center">
+          <div class="text-xs text-gray-500 mb-1">平均再生数</div>
+          <div class="text-lg font-bold text-gray-800">___回</div>
+          <div class="text-xs text-gray-400">直近10本の平均</div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-3 text-center">
+          <div class="text-xs text-gray-500 mb-1">バズライン</div>
+          <div class="text-lg font-bold text-gray-800">平均×___倍</div>
+          <div class="text-xs text-gray-400">自分の基準</div>
+        </div>
+        <div class="bg-green-50 rounded-lg p-3 text-center border border-green-200">
+          <div class="text-xs text-gray-500 mb-1">直近1ヶ月最高</div>
+          <div class="text-lg font-bold text-green-800">70.6万回</div>
+          <div class="text-xs text-green-600">剪定ばさみ動画</div>
+        </div>
+      </div>
+      <p class="text-xs text-green-700 mt-2 flex items-center gap-1"><i data-lucide="check-circle" class="w-3 h-3"></i>登録者数・最高再生数は YouTube Data API v3 で取得（2026-04-30）。平均再生数はYouTube Studioで確認してください。</p>
+    </div>
+
+    <!-- インサイトボックス -->
+    <div class="bg-gradient-to-r from-green-800 to-green-700 text-white rounded-xl p-5">
+      <div class="flex items-start gap-3">
+        <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5"></i>
+        <div>
+          <div class="font-bold mb-1 text-sm">今回のポイント</div>
+          <p class="text-green-100 text-sm leading-relaxed">
+            5/30〜6/6は梅雨入り直前〜直後。「梅雨前にやるべき庭仕事」「アジサイ剪定タイミング」は毎年この時期に安定して検索・再生が伸びる定番テーマ。加えてザキ's Garden（登録者約6.6万）が果樹剪定で約92万回を記録した「初心者でもわかる剪定」構造が今最も再現性の高いバズパターンとして確認できた。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Trends セクション -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="search" class="w-5 h-5 text-blue-700"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">Google検索トレンド（月別スコア）</h2>
+          <p class="text-xs text-gray-400">✅ Google Trends API 実データ（2021〜2026年・日本国内）スコアは相対値（最高=100）</p>
+        </div>
+      </div>
+
+      <!-- 5月・6月比較バーチャート -->
+      <div class="mb-6">
+        <div class="text-xs font-bold text-gray-500 mb-3">キーワード別・5月 vs 6月の検索スコア比較</div>
+        <div class="space-y-3">
+
+          <!-- 植木 剪定 -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">植木 剪定</span>
+              <div class="flex items-center gap-3 text-xs">
+                <span class="text-green-600 font-bold">5月: 31</span>
+                <span class="text-blue-600 font-bold">6月: 29</span>
+                <span class="bg-green-100 text-green-700 text-xs px-1.5 py-0.5 rounded">5月がピーク</span>
+              </div>
+            </div>
+            <div class="flex gap-1 h-5">
+              <div class="bg-green-500 rounded-sm" style="width:31%"></div>
+              <div class="bg-blue-400 rounded-sm" style="width:29%"></div>
+              <div class="flex-1 bg-gray-100 rounded-sm"></div>
+            </div>
+          </div>
+
+          <!-- アジサイ 剪定 -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">アジサイ 剪定</span>
+              <div class="flex items-center gap-3 text-xs">
+                <span class="text-green-600 font-bold">5月: 13</span>
+                <span class="text-blue-700 font-bold">6月: 36</span>
+                <span class="bg-blue-100 text-blue-700 text-xs px-1.5 py-0.5 rounded font-bold">6月がピーク ↑2.8倍</span>
+              </div>
+            </div>
+            <div class="flex gap-1 h-5">
+              <div class="bg-green-500 rounded-sm" style="width:13%"></div>
+              <div class="bg-blue-600 rounded-sm" style="width:36%"></div>
+              <div class="flex-1 bg-gray-100 rounded-sm"></div>
+            </div>
+          </div>
+
+          <!-- シンボルツリー -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">シンボルツリー</span>
+              <div class="flex items-center gap-3 text-xs">
+                <span class="text-green-600 font-bold">5月: 70</span>
+                <span class="text-blue-600 font-bold">6月: 57</span>
+                <span class="bg-green-100 text-green-700 text-xs px-1.5 py-0.5 rounded">5月がピーク（4月71が最高）</span>
+              </div>
+            </div>
+            <div class="flex gap-1 h-5">
+              <div class="bg-green-500 rounded-sm" style="width:70%"></div>
+              <div class="bg-blue-400 rounded-sm" style="width:57%"></div>
+            </div>
+          </div>
+
+          <!-- 雑草 対策 -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">雑草 対策</span>
+              <div class="flex items-center gap-3 text-xs">
+                <span class="text-green-600 font-bold">5月: 68</span>
+                <span class="text-blue-600 font-bold">6月: 59</span>
+                <span class="bg-green-100 text-green-700 text-xs px-1.5 py-0.5 rounded">5月がピーク</span>
+              </div>
+            </div>
+            <div class="flex gap-1 h-5">
+              <div class="bg-green-500 rounded-sm" style="width:68%"></div>
+              <div class="bg-blue-400 rounded-sm" style="width:59%"></div>
+            </div>
+          </div>
+
+          <!-- 庭木 おすすめ -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm font-medium text-gray-700">庭木 おすすめ</span>
+              <div class="flex items-center gap-3 text-xs">
+                <span class="text-green-600 font-bold">5月: 19</span>
+                <span class="text-blue-600 font-bold">6月: 15</span>
+                <span class="bg-gray-100 text-gray-600 text-xs px-1.5 py-0.5 rounded">通年低め</span>
+              </div>
+            </div>
+            <div class="flex gap-1 h-5">
+              <div class="bg-green-500 rounded-sm" style="width:19%"></div>
+              <div class="bg-blue-400 rounded-sm" style="width:15%"></div>
+              <div class="flex-1 bg-gray-100 rounded-sm"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex items-center gap-4 mt-2 text-xs text-gray-400">
+          <span class="flex items-center gap-1"><span class="w-3 h-3 bg-green-500 rounded-sm inline-block"></span>5月スコア</span>
+          <span class="flex items-center gap-1"><span class="w-3 h-3 bg-blue-400 rounded-sm inline-block"></span>6月スコア</span>
+          <span>（スコア100 = その期間の最高値）</span>
+        </div>
+      </div>
+
+      <!-- 関連クエリ（検索者が一緒に調べているもの） -->
+      <div class="grid md:grid-cols-3 gap-4 mb-5">
+        <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+          <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1">
+            <i data-lucide="search" class="w-3 h-3"></i>「植木 剪定」で一緒に調べられているもの
+          </div>
+          <ul class="space-y-1.5">
+            <li class="flex items-center justify-between">
+              <span class="text-xs text-gray-700">植木 剪定 時期</span>
+              <div class="w-16 bg-gray-200 rounded-full h-1.5"><div class="bg-green-500 h-1.5 rounded-full" style="width:100%"></div></div>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="text-xs text-gray-700">植木 剪定 料金</span>
+              <div class="w-16 bg-gray-200 rounded-full h-1.5"><div class="bg-green-500 h-1.5 rounded-full" style="width:79%"></div></div>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="text-xs text-gray-700">植木 剪定 相場</span>
+              <div class="w-16 bg-gray-200 rounded-full h-1.5"><div class="bg-green-500 h-1.5 rounded-full" style="width:35%"></div></div>
+            </li>
+          </ul>
+          <p class="text-xs text-gray-400 mt-2">「料金・相場」の検索が多い → 「自分でできる剪定」動画への需要が高い</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+          <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1">
+            <i data-lucide="search" class="w-3 h-3"></i>「庭木 おすすめ」で一緒に調べられているもの
+          </div>
+          <ul class="space-y-1.5">
+            <li class="flex items-center justify-between">
+              <span class="text-xs text-gray-700">庭木 おすすめ 低木</span>
+              <div class="w-16 bg-gray-200 rounded-full h-1.5"><div class="bg-green-500 h-1.5 rounded-full" style="width:100%"></div></div>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="text-xs text-gray-700 font-bold text-blue-700">庭木 おすすめ 常緑樹</span>
+              <div class="w-16 bg-gray-200 rounded-full h-1.5"><div class="bg-blue-500 h-1.5 rounded-full" style="width:78%"></div></div>
+            </li>
+          </ul>
+          <p class="text-xs text-blue-600 mt-2 font-medium">↑「常緑樹」は上昇中クエリ</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+          <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1">
+            <i data-lucide="trending-up" class="w-3 h-3 text-orange-500"></i>「雑草 対策」の急上昇クエリ
+          </div>
+          <div class="bg-orange-50 border border-orange-200 rounded p-2 mb-2">
+            <div class="text-xs font-bold text-orange-700">お金のかからない 雑草 対策</div>
+            <div class="text-lg font-black text-orange-600">+200%</div>
+            <div class="text-xs text-orange-500">急上昇中</div>
+          </div>
+          <p class="text-xs text-gray-500">「節約×雑草対策」の動画需要が急増。梅雨前の5月に出すと刺さる。</p>
+        </div>
+      </div>
+
+      <!-- トレンドが示す企画インサイト -->
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <div class="flex items-center gap-2 text-sm font-bold text-blue-800 mb-3">
+          <i data-lucide="lightbulb" class="w-4 h-4 text-yellow-500"></i>Googleトレンドが示す企画タイミング
+        </div>
+        <div class="grid md:grid-cols-2 gap-3">
+          <div class="bg-white rounded-lg p-3 border border-blue-100">
+            <div class="text-xs font-bold text-green-700 mb-1">✅ 5月30日（土）に出すべきテーマ</div>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>・<strong>シンボルツリー</strong>（スコア70・5月がピーク）</li>
+              <li>・<strong>雑草 対策</strong>（スコア68・5月がピーク） ← 節約アングルで差別化</li>
+              <li>・<strong>植木 剪定</strong>（スコア31・5月がわずかに高い）</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-3 border border-blue-100">
+            <div class="text-xs font-bold text-blue-700 mb-1">✅ 6月6日（土）に出すべきテーマ</div>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>・<strong>アジサイ 剪定</strong>（スコア36・6月が圧倒的ピーク ↑2.8倍）</li>
+              <li>・梅雨入り後は「剪定・管理ミス防止」系が伸びやすい</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-xs text-blue-500 mt-2">※ Googleトレンドは相対スコア（0-100）。「シンボルツリー」スコア70 ≠ 絶対検索数70万。あくまで季節性の傾向把握に使用。</p>
+      </div>
+    </div>
+
+    <!-- トレンド一覧 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="trending-up" class="w-5 h-5 text-green-700"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">ガーデニングトレンド一覧</h2>
+          <p class="text-xs text-gray-400">2026年5月下旬〜6月上旬の動向</p>
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-green-50">
+              <th class="text-left px-4 py-3 text-green-800 font-bold rounded-tl-lg">トレンド</th>
+              <th class="text-left px-4 py-3 text-green-800 font-bold">動向</th>
+              <th class="text-left px-4 py-3 text-green-800 font-bold">ピーク時期</th>
+              <th class="text-left px-4 py-3 text-green-800 font-bold">企画メモ</th>
+              <th class="text-left px-4 py-3 text-green-800 font-bold rounded-tr-lg">判断ソース</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">洋アジサイ新品種（アナベル・ノリウツギ・カシワバ）</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-green-600 font-bold text-xs"><i data-lucide="trending-up" class="w-3 h-3"></i>上昇中</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">5〜7月</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">品種紹介・管理のしやすさ訴求で初心者層に刺さる</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">NHK園芸サイト・engei.net・通販6月予約ページ</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">梅雨映え系（カラーリーフ・シェードガーデン）</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-green-600 font-bold text-xs"><i data-lucide="trending-up" class="w-3 h-3"></i>上昇中</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">6〜7月</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">「雨に濡れて映える植物」「日陰の庭」切り口が増えている</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">LIMO・専門誌サイト</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">アジサイ全般（毎年型）</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-gray-500 font-bold text-xs"><i data-lucide="minus" class="w-3 h-3"></i>安定</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">5〜7月</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">梅雨の象徴植物。剪定タイミングとセットで毎年再生が伸びる</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">shuminoengei.jp 6月ランキング最上位</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">梅雨前の庭仕事（排水・病害虫・通気）</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-gray-500 font-bold text-xs"><i data-lucide="minus" class="w-3 h-3"></i>安定</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">5月下旬〜6月</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">毎年の定番。タイムリーに出せば安定再生が見込める</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">造園会社コラム・shiinoniwa.com</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">剪定・高木化の悩み</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-gray-500 font-bold text-xs"><i data-lucide="minus" class="w-3 h-3"></i>安定</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">通年（春夏ピーク）</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">「大きくなりすぎた木」系の悩みは検索・動画で横断的に強い</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">ねとらぼ・造園記事系</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">クチナシ（初夏の香り花木）</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-gray-500 font-bold text-xs"><i data-lucide="minus" class="w-3 h-3"></i>安定</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">6〜7月</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">見頃・香り・管理しやすさをセットで紹介できる</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">shuminoengei.jp・初夏花木記事</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3 font-medium text-gray-800">「ガーデニング」単独キーワード</td>
+              <td class="px-4 py-3"><span class="inline-flex items-center gap-1 text-red-500 font-bold text-xs"><i data-lucide="trending-down" class="w-3 h-3"></i>下降中</span></td>
+              <td class="px-4 py-3 text-gray-500 text-xs">GW前後がピーク</td>
+              <td class="px-4 py-3 text-gray-600 text-xs">GW後に下がる。「アジサイ」「庭木 剪定」等のサブワードで代替を</td>
+              <td class="px-4 py-3 text-gray-400 text-xs">業界記事（春〜GW集中の言及）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 売れ筋植物リスト -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="leaf" class="w-5 h-5 text-green-700"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">5月下旬〜6月の売れ筋植物</h2>
+          <p class="text-xs text-gray-400">通販・ホームセンター・SNS傾向から（バラ・野菜苗・一年草除く）</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-teal-50 rounded-lg p-4 border border-teal-100">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-teal-100 text-teal-700 text-xs px-2 py-0.5 rounded-full font-bold">低木</span>
+            <span class="text-xs text-gray-400">— 梅雨シーズン主役</span>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">アジサイ（アナベル・ノリウツギ・カシワバ）</span><span class="text-gray-500 text-xs ml-1">梅雨の象徴・品種話が毎年盛り上がる</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">クチナシ</span><span class="text-gray-500 text-xs ml-1">6〜7月見頃・香りで差別化できる</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">ブルーベリー</span><span class="text-gray-500 text-xs ml-1">収穫期×庭低木で毎年需要定着</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-emerald-100 text-emerald-700 text-xs px-2 py-0.5 rounded-full font-bold">植木（シンボルツリー）</span>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">オリーブ</span><span class="text-gray-500 text-xs ml-1">常緑・シルバーリーフ・洋風。通年人気</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">シマトネリコ</span><span class="text-gray-500 text-xs ml-1">涼しげ・風に揺れる。初心者に人気の定番</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">ヤマボウシ・アオダモ</span><span class="text-gray-500 text-xs ml-1">落葉シンボルツリー定番。春〜6月が植え付け最適期</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">月桂樹（ゲッケイジュ）</span><span class="text-gray-500 text-xs ml-1">ハーブ×庭木の二刀流。通販6月予約で列挙</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-lime-50 rounded-lg p-4 border border-lime-100">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-lime-100 text-lime-700 text-xs px-2 py-0.5 rounded-full font-bold">宿根草・グラス</span>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">ラベンダー</span><span class="text-gray-500 text-xs ml-1">shuminoengei.jp 6月人気上位。香り・初夏の象徴</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">ギボウシ（ホスタ）</span><span class="text-gray-500 text-xs ml-1">シェードガーデン×カラーリーフ。梅雨に強い</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">宿根グラス（アンドロポゴン等）</span><span class="text-gray-500 text-xs ml-1">揺れる質感・省手間で人気定着</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-amber-50 rounded-lg p-4 border border-amber-100">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs px-2 py-0.5 rounded-full font-bold">この時期の管理需要</span>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">アジサイ花後剪定</span><span class="text-gray-500 text-xs ml-1">6月下旬がタイムリミット。「来年咲かない」緊急性タイトルと相性◎</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">アブラムシ・ハダニ対策</span><span class="text-gray-500 text-xs ml-1">梅雨前後の病害虫急増。早め防除のニーズ</span></span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
+              <span><span class="font-medium text-gray-800">排水・通気改善</span><span class="text-gray-500 text-xs ml-1">密集した枝葉の間引き・水はけ確認が毎年の定番作業</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 過去の人気動画パターン -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center">
+          <i data-lucide="youtube" class="w-5 h-5 text-red-500"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">過去5年・同時期（5月末〜6月）の人気動画</h2>
+          <p class="text-xs text-gray-400">✅ YouTube Data API v3 実測値（2020〜2025年5〜6月、再生数降順）</p>
+        </div>
+      </div>
+      <div class="overflow-x-auto mb-5">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-red-700 text-white">
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tl-lg">#</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">動画タイトル</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">チャンネル名</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">公開日</th>
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tr-lg">再生数（実測）</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="bg-red-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">1</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=_oJXUtkzGWs" target="_blank" class="hover:underline text-red-700">草は根まで取らなくていい</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ティム 芝生好き雑草ハンター<br><span class="text-gray-400">14.2万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2023-06-06</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>3,614.6万回</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">2</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=DYVpTHzMgVg" target="_blank" class="hover:underline">芝生の補修作業のやり方【Proplugger】</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ティム 芝生好き雑草ハンター<br><span class="text-gray-400">14.2万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2023-05-04</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>2,035.5万回</span></td>
+            </tr>
+            <tr class="bg-red-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">3</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=xRtxF7DNULE" target="_blank" class="hover:underline">最恐の雑草を紹介します。＃ヤブガラシ＃除草剤</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カネヤン /お庭のそうじ屋さん<br><span class="text-gray-400">4.7万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-05-07</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>729.1万回</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=AMo0ceJFR8s" target="_blank" class="hover:underline">【庭木抜根】切り株メッタ斬り</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">市川の便利屋ショート<br><span class="text-gray-400">3,010人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-06-03</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">167.3万回</td>
+            </tr>
+            <tr class="bg-red-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">5</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=GyoiPd3XiHo" target="_blank" class="hover:underline">【真似したい！】小さなお庭でもここまで素敵にできます</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カーメン君ガーデンチャンネル<br><span class="text-gray-400">128万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2022-06-09</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">158.4万回</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">6</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=BVfWoGF81K8" target="_blank" class="hover:underline">【狭い庭必見】お庭を寄せ植え感覚で楽しむ方紹介します</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カーメン君ガーデンチャンネル<br><span class="text-gray-400">128万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2021-05-29</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">145.3万回</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-amber-50 rounded-lg p-4 border border-amber-100">
+        <div class="flex items-center gap-2 text-xs font-bold text-amber-700 mb-2">
+          <i data-lucide="lightbulb" class="w-3 h-3"></i>タイトルパターンの共通点（この6本から抽出）
+        </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-white border border-amber-200 text-amber-700 text-xs px-2 py-1 rounded">「常識覆し」（草は根まで取らなくていい）</span>
+          <span class="bg-white border border-amber-200 text-amber-700 text-xs px-2 py-1 rounded">「最恐・絶対・メッタ斬り」強烈ワード</span>
+          <span class="bg-white border border-amber-200 text-amber-700 text-xs px-2 py-1 rounded">「真似したい！」共感・憧れ訴求</span>
+          <span class="bg-white border border-amber-200 text-amber-700 text-xs px-2 py-1 rounded">「狭い庭必見」ターゲット絞り込み</span>
+        </div>
+        <p class="text-xs text-gray-600">1位「草は根まで取らなくていい」（3,614万回）は「今まで信じていた常識が覆る」フレーミング。同じ構造を植木に転用すると「剪定しすぎてた！正しいやり方」「その植え方ずっと間違えてた」などになる。</p>
+      </div>
+    </div>
+
+    <!-- 直近1ヶ月 伸びている動画 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="bar-chart-2" class="w-5 h-5 text-green-700"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">直近1ヶ月 伸びている動画</h2>
+          <p class="text-xs text-gray-400">2026年4月〜5月 ガーデニング・植木ジャンル全体 ※再生数は推定値</p>
+        </div>
+      </div>
+      <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-4 flex items-start gap-2">
+        <i data-lucide="alert-triangle" class="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5"></i>
+        <p class="text-xs text-yellow-700">YouTubeの個別動画再生数はAPIなしでは正確に取得不可。以下は外部記事・推定値です。正確な数値はYouTube Studio（自チャンネル）または有料ツールで確認してください。</p>
+      </div>
+      <div class="bg-green-50 border border-green-200 rounded-lg p-2 mb-3 flex items-center gap-2">
+        <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0"></i>
+        <p class="text-xs text-green-700">YouTube Data API v3 実測値（2026-04-30取得）。日本語コンテンツ・ガーデニング系のみ。</p>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-green-800 text-white">
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tl-lg">#</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">動画タイトル</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">チャンネル名</th>
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tr-lg">再生数（実測）</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="bg-green-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">1</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=3KGvokjUrMY" target="_blank" class="hover:underline">庭で見かけたら絶対に放置してはいけない花</a> <span class="bg-blue-100 text-blue-600 text-xs px-1 rounded">ジャンル外</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ホラー・都市伝説の雑学<br><span class="text-gray-400">登録21.2万人</span></td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>212.1万回</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">2</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=M9gbDjKwc3s" target="_blank" class="hover:underline">段ボールを庭で再利用する方法</a> <span class="bg-blue-100 text-blue-600 text-xs px-1 rounded">ジャンル外</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ナルホド!の森<br><span class="text-gray-400">登録1.3万人</span></td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-red-100 text-red-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>99.0万回</span></td>
+            </tr>
+            <tr class="bg-green-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">3</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=br1zAaaf1k4" target="_blank" class="hover:underline text-purple-700 font-bold">【5分で新品の切れ味】9割の人が間違っている剪定ばさみのお手入れ</a> <span class="bg-purple-100 text-purple-600 text-xs px-1 rounded">★自チャンネル</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">グリーンロケットの植木チャンネル<br><span class="text-gray-400">登録9.7万人</span></td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-purple-100 text-purple-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="star" class="w-3 h-3"></i>70.6万回</span></td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=M49Et3bCAik" target="_blank" class="hover:underline">1000円で10万円の庭を作る方法</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">セカミル<br><span class="text-gray-400">登録6.2万人</span></td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">64.1万回</td>
+            </tr>
+            <tr class="bg-green-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">5</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=X4gKaD1_KdI" target="_blank" class="hover:underline">初心者でも簡単、生垣の剪定 #Shorts</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ガーデン塾【庭の方舟】<br><span class="text-gray-400">登録6.3万人</span></td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">46.7万回</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">6</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=tQJ_xNTDPpM" target="_blank" class="hover:underline">雑草対策｜ドクダミ駆除の実験映像</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">庭づくり大好きおじさん<br><span class="text-gray-400">登録15.7万人</span></td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">39.9万回</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-3 bg-purple-50 border border-purple-200 rounded-lg p-3">
+        <div class="text-xs font-bold text-purple-700 mb-1 flex items-center gap-1"><i data-lucide="star" class="w-3 h-3"></i>注目：自チャンネルが直近1ヶ月3位！</div>
+        <p class="text-xs text-gray-600">「剪定ばさみのお手入れ」が70.6万回。登録9.7万人のチャンネルでこの数値は大幅超過。「道具・メンテナンス」テーマの再現性を次回企画に活かせる。</p>
+      </div>
+    </div>
+
+    <!-- 小規模チャンネル バズ動画 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="zap" class="w-5 h-5 text-amber-700"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">小規模チャンネル バズ動画</h2>
+          <p class="text-xs text-gray-400">登録者7万人以下・過去7年の同月（5〜6月）投稿・チャンネル平均を大きく上回る動画 ✅ API実測値</p>
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-amber-700 text-white">
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tl-lg">#</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">動画タイトル</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">チャンネル名</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">登録者数<br>（7万以下）</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">投稿年月</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">再生数（実測）</th>
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tr-lg">バズった仮説</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="bg-amber-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">1</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=xRtxF7DNULE" target="_blank" class="hover:underline">最恐の雑草を紹介します。ヤブガラシ #雑草 #草刈り #除草剤</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カネヤン /お庭のそうじ屋さん</td>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4.7万人</td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-05-07</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>729.1万回</span></td>
+              <td class="px-3 py-3 text-gray-600 text-xs">「最恐」「絶対」の強烈ワード＋梅雨前の雑草対策需要が爆発</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">2</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=AMo0ceJFR8s" target="_blank" class="hover:underline">【庭木抜根】切り株メッタ斬り</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">市川の便利屋ショート</td>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">3,010人</td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-06-03</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>167.3万回</span></td>
+              <td class="px-3 py-3 text-gray-600 text-xs">登録3千人で167万回。「メッタ斬り」の攻撃的タイトル＋Shorts形式が拡散</td>
+            </tr>
+            <tr class="bg-amber-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">3</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=Y5U9mjgg558" target="_blank" class="hover:underline">もしかしたらこの生物が地球を救うかもしれません。イシクラゲ</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カネヤン /お庭のそうじ屋さん</td>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4.7万人</td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-05-27</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">138.2万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">「地球を救う」という誇張表現＋謎の庭生物への好奇心</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=zyuxQVmtTYw" target="_blank" class="hover:underline">花を植えるのに疲れたら… #ガーデニング</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">akko's cozy garden diary</td>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">1.7万人</td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-05-18</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">115.8万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">「疲れた」という共感ワードがGW後の疲弊感に刺さった</td>
+            </tr>
+            <tr class="bg-amber-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">5</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=-ii74gVCXg4" target="_blank" class="hover:underline">すごいふえる… #shorts #ガーデニング</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">Ruruガーデニングチャンネル</td>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4,370人</td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2023-05-18</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">84.9万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">登録4千人で85万回。増える様子のビジュアルがShorts向け</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">6</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=m1_EUEwGn7Q" target="_blank" class="hover:underline">【DIY】庭にフェンス設置</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">猿【Saru】camper</td>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">1.1万人</td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2023-05-05</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">82.4万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">実用DIY需要＋実演動画の完結感が視聴継続率を上げた</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-3 bg-amber-50 rounded-lg p-3 border border-amber-100">
+        <div class="flex items-center gap-1 text-xs text-amber-700 font-bold mb-1">
+          <i data-lucide="lightbulb" class="w-3 h-3"></i>自チャンネルへの示唆
+        </div>
+        <p class="text-xs text-gray-600">カネヤン（4.7万人）が「最恐の雑草」で729万回。共通パターンは「強烈ワード（最恐・絶対・メッタ斬り）＋梅雨前後の実用ニーズ」。グリーンロケットなら「絶対植えない木」「これを放置すると後悔」系のタイトルに直接応用できる。</p>
+      </div>
+    </div>
+
+    <!-- ジャンル外 バズ動画 -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+          <i data-lucide="globe" class="w-5 h-5 text-blue-700"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">ジャンル外 バズ動画</h2>
+          <p class="text-xs text-gray-400">芝生・雑草・ガーデニング全般チャンネルが庭木テーマで伸びた動画 ✅ API実測値（2020〜2025年5〜6月）</p>
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-blue-700 text-white">
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tl-lg">#</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">動画タイトル</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">チャンネル名（メインジャンル）</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">投稿年月</th>
+              <th class="text-left px-3 py-3 font-bold text-xs">再生数（実測）</th>
+              <th class="text-left px-3 py-3 font-bold text-xs rounded-tr-lg">バズった仮説</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="bg-blue-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">1</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=_oJXUtkzGWs" target="_blank" class="hover:underline">草は根まで取らなくていい</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ティム 芝生好き雑草ハンター<br><span class="text-gray-400">芝生専門・14.2万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2023-06-06</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>3,614.6万回</span></td>
+              <td class="px-3 py-3 text-gray-600 text-xs">「常識覆し」タイトルが全庭仕事ユーザーに刺さり爆発的拡散</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">2</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=DYVpTHzMgVg" target="_blank" class="hover:underline">芝生の補修作業のやり方【Proplugger】</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">ティム 芝生好き雑草ハンター<br><span class="text-gray-400">芝生専門・14.2万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2023-05-04</td>
+              <td class="px-3 py-3"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold"><i data-lucide="flame" class="w-3 h-3"></i>2,035.5万回</span></td>
+              <td class="px-3 py-3 text-gray-600 text-xs">専門ツールの実演動画が庭メンテナンス層全般に刺さった</td>
+            </tr>
+            <tr class="bg-blue-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">3</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=GyoiPd3XiHo" target="_blank" class="hover:underline">【真似したい！】小さなお庭でもここまで素敵にできます</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カーメン君ガーデンチャンネル<br><span class="text-gray-400">園芸全般・128万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2022-06-09</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">158.4万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">「狭い庭でもできる」という初心者の不安解消フレーミング</td>
+            </tr>
+            <tr>
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">4</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=BVfWoGF81K8" target="_blank" class="hover:underline">【狭い庭必見】お庭を寄せ植え感覚で楽しむ方紹介</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カーメン君ガーデンチャンネル<br><span class="text-gray-400">園芸全般・128万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2021-05-29</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">145.3万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">実際の個人庭のビフォーアフターが「自分ごと化」を促進</td>
+            </tr>
+            <tr class="bg-blue-50">
+              <td class="px-3 py-3 text-gray-500 text-xs font-bold">5</td>
+              <td class="px-3 py-3 font-medium text-gray-800"><a href="https://www.youtube.com/watch?v=VpDCnBPqzxY" target="_blank" class="hover:underline">【常識破り】園芸初心者「野口健」の庭が想像をはるかに越していた</a></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">カーメン君ガーデンチャンネル<br><span class="text-gray-400">園芸全般・128万人</span></td>
+              <td class="px-3 py-3 text-gray-500 text-xs">2024-06-08</td>
+              <td class="px-3 py-3 text-gray-700 text-xs font-bold">145.1万回</td>
+              <td class="px-3 py-3 text-gray-600 text-xs">有名人コラボ×「常識破り」「想像を超えた」のサプライズ訴求</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 企画アイデアセクション -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center">
+          <i data-lucide="lightbulb" class="w-5 h-5 text-yellow-300"></i>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-gray-800">企画アイデア</h2>
+          <p class="text-xs text-gray-400">5月30日（土）・6月6日（土）公開向け・3カテゴリ別候補</p>
+        </div>
+      </div>
+
+      <!-- 作業系 -->
+      <div class="mb-6">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-6 h-6 bg-orange-100 rounded-md flex items-center justify-center">
+              <i data-lucide="scissors" class="w-3.5 h-3.5 text-orange-600"></i>
+            </div>
+            <span class="text-sm font-bold text-gray-700">作業系</span>
+            <span class="text-xs text-gray-400">— この時期の庭仕事・管理テーマ</span>
+            <span class="text-xs text-gray-400 ml-auto">★評価基準：競合実績×タイムリー性×チャンネル相性の3軸</span>
+          </div>
+        <div class="space-y-3">
+          <div class="border-l-4 border-orange-500 bg-orange-50 p-4 rounded-r-xl">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-xs flex-shrink-0">★★★</div>
+              <div class="flex-1">
+                <div class="font-bold text-gray-800 mb-1">梅雨前に絶対やっておくべき庭仕事5選【植木屋が教える】</div>
+                <p class="text-sm text-gray-600 mb-2">排水確認・密集枝の間引き・病害虫の早期チェック・鉢の蒸れ対策・雑草の一掃を、プロ視点でリスト化。チェックリスト型で「何から手をつけるか分からない」初心者に直接刺さる。</p>
+                <div class="flex flex-wrap gap-3 text-xs text-gray-500 mb-3">
+                  <span class="flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3 text-orange-500"></i>根拠：梅雨前の庭仕事は毎年定番テーマ。5/30公開なら梅雨入り直前でタイムリー</span>
+                  <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3 h-3 text-blue-500"></i>推奨：5月30日（土）</span>
+                </div>
+                <div class="bg-white border border-orange-200 rounded-lg p-3">
+                  <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1"><i data-lucide="list" class="w-3 h-3"></i>動画構成メモ（目安8〜12分）</div>
+                  <ol class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
+                    <li>オープニング（30秒）：「梅雨で庭が荒れる前に今すぐやることがある」</li>
+                    <li>なぜ梅雨前が重要か（1〜2分）：蒸れ・病害虫のビジュアル説明</li>
+                    <li>作業5選を順番に解説（5〜7分）：①除草（根から抜く） ②排水確認（水はけチェック） ③密集枝の間引き剪定 ④葉裏の病害虫確認 ⑤鉢の置き場・蒸れ対策</li>
+                    <li>まとめ（1分）：「これだけやれば梅雨を乗り切れる」</li>
+                  </ol>
+                  <div class="mt-2 pt-2 border-t border-orange-100">
+                    <div class="text-xs font-bold text-gray-500 mb-1 flex items-center gap-1"><i data-lucide="image" class="w-3 h-3"></i>サムネイルアイデア</div>
+                    <p class="text-xs text-gray-500">「梅雨前にやること5選」テキスト大文字 ＋ 庭の作業イメージ写真 ＋ 「今すぐ！」「植木屋が教える」フック文字。背景は緑で季節感を出す。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-4 border-orange-300 bg-orange-50 p-4 rounded-r-xl">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 bg-orange-300 text-white rounded-full flex items-center justify-center font-bold text-xs flex-shrink-0">★★☆</div>
+              <div class="flex-1">
+                <div class="font-bold text-gray-800 mb-1">アジサイの花後剪定 今月中にやらないと来年咲かない！</div>
+                <p class="text-sm text-gray-600 mb-2">「6月下旬がタイムリミット」という緊急性を前面に出し、剪定の方法・切る位置・道具を分かりやすく実演する。既に庭にアジサイがある層に直接刺さる。</p>
+                <div class="flex flex-wrap gap-3 text-xs text-gray-500 mb-3">
+                  <span class="flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3 text-orange-500"></i>根拠：毎年6月に安定再生。カーメン君等のベンチマークも毎年このテーマを投稿</span>
+                  <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3 h-3 text-blue-500"></i>推奨：6月6日（土）</span>
+                </div>
+                <div class="bg-white border border-orange-200 rounded-lg p-3">
+                  <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1"><i data-lucide="list" class="w-3 h-3"></i>動画構成メモ（目安6〜10分）</div>
+                  <ol class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
+                    <li>オープニング（30秒）：「これを6月下旬までにやらないと来年花が咲かない」</li>
+                    <li>花芽形成の仕組み（1分）：なぜ今剪定が重要かを簡単に</li>
+                    <li>剪定方法の実演（4〜6分）：切る位置（花の2〜3節下で切る）・道具・注意点（アジサイ種類別の違いも触れる）</li>
+                    <li>よくある失敗（1〜2分）：切りすぎ・遅すぎの例（来年咲かなかった失敗談を自分の言葉で）</li>
+                    <li>まとめ（30秒）：「今週中にやれば来年も咲く」</li>
+                  </ol>
+                  <div class="mt-2 pt-2 border-t border-orange-100">
+                    <div class="text-xs font-bold text-gray-500 mb-1 flex items-center gap-1"><i data-lucide="image" class="w-3 h-3"></i>サムネイルアイデア</div>
+                    <p class="text-xs text-gray-500">アジサイのアップ写真 ＋「今月中！」大文字 ＋「やらないと来年咲かない」赤背景テキスト。緊急感を色と文字サイズで表現。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 植物系 -->
+      <div class="mb-6">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-6 h-6 bg-green-100 rounded-md flex items-center justify-center">
+            <i data-lucide="leaf" class="w-3.5 h-3.5 text-green-600"></i>
+          </div>
+          <span class="text-sm font-bold text-gray-700">お庭におすすめの植物</span>
+          <span class="text-xs text-gray-400">— 低木・シンボルツリーなど</span>
+        </div>
+        <div class="space-y-3">
+          <div class="border-l-4 border-green-500 bg-green-50 p-4 rounded-r-xl">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-xs flex-shrink-0">★★★</div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <div class="font-bold text-gray-800">手入れ不要で増やせる！梅雨に映えるアジサイ品種3選【初心者向け】</div>
+                  <span class="bg-teal-100 text-teal-700 text-xs px-2 py-0.5 rounded-full font-medium">低木</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">アナベル・ノリウツギ・カシワバアジサイを軸に、それぞれの特徴・管理しやすさ・挿し木タイミングを紹介。「手入れ不要」「増やせる」の二重訴求でターゲット3層すべてに刺さる。</p>
+                <div class="flex flex-wrap gap-3 text-xs text-gray-500 mb-3">
+                  <span class="flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3 text-green-600"></i>根拠：アジサイは梅雨の象徴・新品種人気上昇中・挿し木タイミングとも重なる三拍子</span>
+                  <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3 h-3 text-blue-500"></i>推奨：5月30日（土）</span>
+                </div>
+                <div class="bg-white border border-green-200 rounded-lg p-3">
+                  <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1"><i data-lucide="list" class="w-3 h-3"></i>動画構成メモ（目安8〜12分）</div>
+                  <ol class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
+                    <li>オープニング（30秒）：「梅雨に映える＋手入れ不要＋増やせる品種がある」フック</li>
+                    <li>品種①：アナベル（白花・強健・剪定しやすい・地植えOK・大株になる）（2〜3分）</li>
+                    <li>品種②：ノリウツギ（秋まで咲き続ける・花が変わる・寒さに強い）（2〜3分）</li>
+                    <li>品種③：カシワバアジサイ（大型・紅葉も美しい・和洋兼用・花期が長い）（2〜3分）</li>
+                    <li>梅雨の挿し木チャンス（1分）：「今が増やせる時期」ボーナス情報で視聴者の行動を引き出す</li>
+                    <li>まとめ（30秒）</li>
+                  </ol>
+                  <div class="mt-2 pt-2 border-t border-green-100">
+                    <div class="text-xs font-bold text-gray-500 mb-1 flex items-center gap-1"><i data-lucide="image" class="w-3 h-3"></i>サムネイルアイデア</div>
+                    <p class="text-xs text-gray-500">アナベル・ノリウツギ・カシワバの3枚並べ ＋「梅雨に映える」「手入れ不要」テキスト。雨上がりの瑞々しいカット使用が理想。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-l-4 border-green-300 bg-green-50 p-4 rounded-r-xl">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 bg-green-300 text-white rounded-full flex items-center justify-center font-bold text-xs flex-shrink-0">★★☆</div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <div class="font-bold text-gray-800">シンボルツリー選びで後悔しない！プロが本音で教えるおすすめ3選</div>
+                  <span class="bg-emerald-100 text-emerald-700 text-xs px-2 py-0.5 rounded-full font-medium">高木</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">オリーブ・ヤマボウシ・アオダモを軸に、デメリットも包み隠さず解説する「正直動画」。「プロが本音で」タイトルと「後悔」ワードで検索流入と視聴完了率を両取りする。</p>
+                <div class="flex flex-wrap gap-3 text-xs text-gray-500 mb-3">
+                  <span class="flex items-center gap-1"><i data-lucide="trending-up" class="w-3 h-3 text-green-600"></i>根拠：春〜6月はシンボルツリー検討層が最も活発。「後悔」「本音」タイトルが過去の人気動画に共通するパターン</span>
+                  <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3 h-3 text-blue-500"></i>推奨：6月6日（土）</span>
+                </div>
+                <div class="bg-white border border-green-200 rounded-lg p-3">
+                  <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1"><i data-lucide="list" class="w-3 h-3"></i>動画構成メモ（目安10〜15分）</div>
+                  <ol class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
+                    <li>オープニング（30秒）：「これを選んで後悔した、というシンボルツリーを正直に話します」</li>
+                    <li>樹種①：オリーブ（洋風で人気だが関東以南では成長が旺盛で大きくなりすぎる・剪定を怠ると暴れる）（3〜4分）</li>
+                    <li>樹種②：ヤマボウシ（落葉で冬に丸裸になる点を知らずに選ぶ後悔が多い・成長速度も予想外）（3分）</li>
+                    <li>樹種③：アオダモ（細幹が人気だが成長後に存在感が変わる・日当たり要件の誤解）（3分）</li>
+                    <li>選び方まとめ（1〜2分）：「家の雰囲気・管理の手間・好みで決める基準」＋後悔しにくい樹種を1〜2個紹介して締める</li>
+                  </ol>
+                  <div class="mt-2 pt-2 border-t border-green-100">
+                    <div class="text-xs font-bold text-gray-500 mb-1 flex items-center gap-1"><i data-lucide="image" class="w-3 h-3"></i>サムネイルアイデア</div>
+                    <p class="text-xs text-gray-500">プロの作業着写真（信頼感）＋「後悔しない」「植木屋が教える」大文字テキスト ＋ 人気3樹種のミニ画像を並べる。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- イベント・特集系 -->
+      <div class="mb-5">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-6 h-6 bg-purple-100 rounded-md flex items-center justify-center">
+            <i data-lucide="star" class="w-3.5 h-3.5 text-purple-600"></i>
+          </div>
+          <span class="text-sm font-bold text-gray-700">イベント・特集系</span>
+          <span class="text-xs text-gray-400">— バズパターンを活用した特集・知識共有</span>
+        </div>
+        <div class="space-y-3">
+          <div class="border-l-4 border-purple-500 bg-purple-50 p-4 rounded-r-xl">
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-xs flex-shrink-0">★★★</div>
+              <div class="flex-1">
+                <div class="font-bold text-gray-800 mb-1">植木屋が自分の庭に絶対植えない木3選 その理由とは</div>
+                <p class="text-sm text-gray-600 mb-2">「プロ視点の禁止リスト」構造。手入れが大変・近隣トラブルになりやすい・枯れやすいという3軸で樹種を絞り込み、代替案も提示する。</p>
+                <div class="flex flex-wrap gap-3 text-xs text-gray-500 mb-2">
+                  <span class="flex items-center gap-1"><i data-lucide="flame" class="w-3 h-3 text-purple-500"></i>根拠：同ジャンルの同一構造動画で推定120万回の実績（いろは造園・登録者9.5万人）。登録者6〜7万規模でも再現性が高いパターン</span>
+                  <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3 h-3 text-blue-500"></i>推奨：5月30日（土）または6月6日（土）</span>
+                </div>
+                <div class="bg-yellow-50 border border-yellow-200 rounded p-2 mb-3">
+                  <p class="text-xs text-yellow-700"><i data-lucide="alert-triangle" class="w-3 h-3 inline mr-1"></i>120万回は外部記事の推定値。自チャンネルへの再現性は登録者数・既存視聴者層と照らして判断を。</p>
+                </div>
+                <div class="bg-white border border-purple-200 rounded-lg p-3">
+                  <div class="text-xs font-bold text-gray-600 mb-2 flex items-center gap-1"><i data-lucide="list" class="w-3 h-3"></i>動画構成メモ（目安8〜12分）</div>
+                  <div class="mb-2 bg-purple-50 rounded p-2 border border-purple-100">
+                    <div class="text-xs font-bold text-purple-700 mb-1">樹種案（3候補・変更可）</div>
+                    <ul class="text-xs text-gray-600 space-y-1">
+                      <li><span class="font-bold">①コニファー（ゴールドクレスト系）</span>：クリスマスに人気→5年で2m超え・ハダニで枯れやすい・根元が裸になる</li>
+                      <li><span class="font-bold">②竹（モウソウチク・マダケ）</span>：和風庭園に人気→地下茎が広がり隣地侵入・根の撤去が大工事</li>
+                      <li><span class="font-bold">③シラカバ</span>：北欧風に人気→関東以南の夏の暑さで枯れやすい・高温多湿に弱い</li>
+                    </ul>
+                  </div>
+                  <ol class="text-xs text-gray-600 space-y-1 list-decimal list-inside">
+                    <li>オープニング（30秒）：「これを植えると後悔します——プロが経験から語ります」</li>
+                    <li>木①（コニファー）（2〜3分）：人気の理由・なぜ自分の庭には植えないか・実際の失敗事例</li>
+                    <li>木②（竹）（2〜3分）：和の魅力・地下茎トラブルの深刻さ・DIY撤去の限界</li>
+                    <li>木③（シラカバ）（2〜3分）：北欧的な美しさ・関東以南での失敗率・適した地域を補足</li>
+                    <li>まとめ（1分）：代わりにおすすめできる木（シマトネリコ・ヤマボウシ等）を添えてクロージング</li>
+                  </ol>
+                  <div class="mt-2 pt-2 border-t border-purple-100">
+                    <div class="text-xs font-bold text-gray-500 mb-1 flex items-center gap-1"><i data-lucide="image" class="w-3 h-3"></i>サムネイルアイデア</div>
+                    <p class="text-xs text-gray-500">×マーク付きの樹種写真3枚並べ ＋「植木屋が絶対に植えない木」赤テキスト。「3選」は数字を大きく。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5/30 vs 6/6 最終プラン -->
+      <div class="bg-green-800 text-white rounded-xl p-5 mt-2">
+        <div class="flex items-center gap-2 mb-4">
+          <i data-lucide="check-circle" class="w-5 h-5 text-yellow-300"></i>
+          <div class="font-bold text-base">5/30・6/6 最終プラン（推奨組み合わせ）</div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-white/10 rounded-lg p-4">
+            <div class="text-yellow-300 font-bold text-sm mb-2 flex items-center gap-1">
+              <i data-lucide="calendar" class="w-4 h-4"></i>5月30日（土）公開
+            </div>
+            <div class="font-bold text-white text-sm mb-1">梅雨前に絶対やっておくべき庭仕事5選</div>
+            <p class="text-green-200 text-xs">梅雨入り直前でタイムリー感が最大化。チェックリスト型で初心者の行動を引き出しやすい。</p>
+          </div>
+          <div class="bg-white/10 rounded-lg p-4">
+            <div class="text-yellow-300 font-bold text-sm mb-2 flex items-center gap-1">
+              <i data-lucide="calendar" class="w-4 h-4"></i>6月6日（土）公開
+            </div>
+            <div class="font-bold text-white text-sm mb-1">植木屋が自分の庭に絶対植えない木3選</div>
+            <p class="text-green-200 text-xs">バズパターン実績ありの構造。梅雨に入ってから庭木選びに慎重になるタイミングと合致。</p>
+          </div>
+        </div>
+        <p class="text-green-300 text-xs mt-3">※ アジサイ品種・花後剪定・シンボルツリー3選は次回以降の枠として温存してもよい。</p>
+      </div>
+
+      <!-- 台本キーワードメモ -->
+      <div class="bg-gray-50 rounded-lg p-4 mt-4">
+        <div class="flex items-center gap-2 text-xs font-bold text-gray-600 mb-2">
+          <i data-lucide="pen-line" class="w-3 h-3"></i>台本・タイトルに入れると良いキーワード
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">梅雨前に</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">今月中に</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">失敗しない</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">植木屋が教える</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">手入れ不要</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">後悔しない</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">絶対に植えない</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">初心者でも</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">来年咲かない</span>
+          <span class="bg-white border border-gray-200 text-gray-600 text-xs px-2 py-1 rounded">本音で教える</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

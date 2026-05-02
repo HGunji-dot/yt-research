@@ -47,7 +47,7 @@ async function searchVideos(query, publishedAfter, publishedBefore) {
     type: "video",
     regionCode: "JP",
     relevanceLanguage: "ja",
-    maxResults: 10,
+    maxResults: 20,
     order: "viewCount",
     publishedAfter,
     publishedBefore,
@@ -197,10 +197,14 @@ async function main() {
       v.year >= 2021
   );
 
+  const CARMEN_ID = "UCN64oPXNfhEvPQJUaIHAEnA";
+  const seasonalExcl = seasonal.filter((v) => v.channelId !== CARMEN_ID);
+
   const output = {
     generatedAt: now.toISOString().slice(0, 16).replace("T", " ") + " UTC",
     recent_trending: recent.slice(0, 15),
     seasonal_popular: seasonal.slice(0, 15),
+    seasonal_popular_excl: seasonalExcl.slice(0, 20),
     small_channel_buzz: smallChannel.slice(0, 15),
     genre_outlier_buzz: genreOutlier.slice(0, 15),
   };
@@ -208,10 +212,11 @@ async function main() {
   fs.writeFileSync("video_data.json", JSON.stringify(output, null, 2), "utf-8");
 
   console.log("\n=== 完了 ===");
-  console.log(`直近1ヶ月 伸び動画:      ${output.recent_trending.length} 件`);
-  console.log(`季節的人気動画(5〜6月):  ${output.seasonal_popular.length} 件`);
-  console.log(`小規模チャンネルバズ:    ${output.small_channel_buzz.length} 件`);
-  console.log(`ジャンル外バズ:          ${output.genre_outlier_buzz.length} 件`);
+  console.log(`直近1ヶ月 伸び動画:           ${output.recent_trending.length} 件`);
+  console.log(`季節的人気動画(5〜6月):       ${output.seasonal_popular.length} 件`);
+  console.log(`季節的人気動画(カーメン君除く): ${output.seasonal_popular_excl.length} 件`);
+  console.log(`小規模チャンネルバズ:         ${output.small_channel_buzz.length} 件`);
+  console.log(`ジャンル外バズ:               ${output.genre_outlier_buzz.length} 件`);
   console.log("→ video_data.json に保存");
 }
 

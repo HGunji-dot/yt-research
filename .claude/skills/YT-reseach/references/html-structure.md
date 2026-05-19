@@ -264,16 +264,15 @@
       <i data-lucide="youtube" class="w-5 h-5 text-red-500"></i>
     </div>
     <div>
-      <h2 class="text-lg font-bold text-gray-800">過去5年・同時期（5月）の人気動画パターン</h2>
+      <h2 class="text-lg font-bold text-gray-800">過去5年・同時期（6月）の人気動画パターン</h2>
       <p class="text-xs text-gray-400">※ 再生数は公開情報・推定値。実数値はYouTube Studioで要確認</p>
     </div>
   </div>
 
   <!-- テーマパターン集計 -->
   <div class="mb-5">
-    <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">毎年5月に繰り返し伸びているテーマ（過去5年の傾向）</div>
+    <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">毎年同月に繰り返し伸びているテーマ（過去5年の傾向）</div>
     <div class="space-y-2">
-      <!-- テーマ行（繰り返す） -->
       <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg border border-green-100">
         <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0">
           <i data-lucide="repeat" class="w-4 h-4"></i>
@@ -290,31 +289,69 @@
     </div>
   </div>
 
-  <!-- 個別動画リスト -->
-  <div class="mb-5">
-    <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">参照動画（過去5年・5月の高評価動画）</div>
+  <!-- ロング動画リスト -->
+  <div class="mb-4">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="bg-gray-600 text-white text-xs font-bold px-3 py-1 rounded-full">ロング（3分超）</span>
+      <span class="text-xs text-gray-400">※推定分類</span>
+    </div>
     <div class="overflow-x-auto">
       <table class="w-full text-sm">
         <thead>
-          <tr class="bg-gray-50">
-            <th class="text-left px-3 py-2 text-gray-600 font-bold text-xs rounded-tl-lg">年</th>
-            <th class="text-left px-3 py-2 text-gray-600 font-bold text-xs">動画テーマ / タイトルパターン</th>
-            <th class="text-left px-3 py-2 text-gray-600 font-bold text-xs">チャンネル</th>
-            <th class="text-left px-3 py-2 text-gray-600 font-bold text-xs rounded-tr-lg">推定規模</th>
+          <tr class="bg-gray-600 text-white">
+            <th class="text-left px-3 py-2 font-bold text-xs rounded-tl-lg">#</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">動画タイトル</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">チャンネル名</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">投稿年月</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">尺（推定）</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">再生数（推定）</th>
+            <th class="text-left px-3 py-2 font-bold text-xs rounded-tr-lg">なぜ伸びたか</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-gray-100">
           <tr class="hover:bg-gray-50">
-            <td class="px-3 py-2 text-gray-500 text-xs">2024</td>
-            <td class="px-3 py-2 font-medium text-gray-800 text-sm">【動画テーマ/タイトルパターン】</td>
+            <td class="px-3 py-2 text-gray-500 text-xs">1</td>
+            <td class="px-3 py-2 font-medium text-gray-800">【動画タイトル】</td>
             <td class="px-3 py-2 text-gray-500 text-xs">【チャンネル名】</td>
-            <td class="px-3 py-2">
-              <span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full">
-                <i data-lucide="flame" class="w-3 h-3"></i>高
-              </span>
-            </td>
+            <td class="px-3 py-2 text-gray-500 text-xs">2024/06</td>
+            <td class="px-3 py-2 text-gray-400 text-xs">—</td>
+            <td class="px-3 py-2"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full"><i data-lucide="flame" class="w-3 h-3"></i>約◯万</span></td>
+            <td class="px-3 py-2 text-gray-600 text-xs">【仮説】</td>
           </tr>
-          <!-- 行を繰り返す -->
+          <!-- 行を繰り返す（最大10行） -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ショート動画リスト（2021年以降のみ） -->
+  <div class="mb-5">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full">ショート（〜60秒）</span>
+      <span class="text-xs text-gray-400">※2021年以降のみ対象・推定分類</span>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-pink-600 text-white">
+            <th class="text-left px-3 py-2 font-bold text-xs rounded-tl-lg">#</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">動画タイトル</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">チャンネル名</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">投稿年月</th>
+            <th class="text-left px-3 py-2 font-bold text-xs">再生数（推定）</th>
+            <th class="text-left px-3 py-2 font-bold text-xs rounded-tr-lg">なぜ伸びたか</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="bg-pink-50">
+            <td class="px-3 py-2 text-gray-500 text-xs">1</td>
+            <td class="px-3 py-2 font-medium text-gray-800">【動画タイトル】</td>
+            <td class="px-3 py-2 text-gray-500 text-xs">【チャンネル名】</td>
+            <td class="px-3 py-2 text-gray-500 text-xs">2023/06</td>
+            <td class="px-3 py-2"><span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full"><i data-lucide="flame" class="w-3 h-3"></i>約◯万</span></td>
+            <td class="px-3 py-2 text-gray-600 text-xs">【仮説】</td>
+          </tr>
+          <!-- 行を繰り返す（最大10行） -->
         </tbody>
       </table>
     </div>
@@ -332,22 +369,92 @@
       <span class="bg-white border border-amber-200 text-amber-700 text-xs px-2 py-1 rounded">【パターン例: 「初心者でも」】</span>
     </div>
   </div>
-
-  <!-- 情報が取得できない場合のフォールバック -->
-  <!-- 
-  <div class="bg-gray-50 rounded-lg p-4 text-center">
-    <i data-lucide="alert-triangle" class="w-5 h-5 text-gray-400 mx-auto mb-2"></i>
-    <p class="text-sm text-gray-500">再生数情報の取得には YouTube Studio または Analytics ツールが必要です。</p>
-    <p class="text-xs text-gray-400 mt-1">キーワードプランナー・Google Trends で補完してください。</p>
-  </div>
-  -->
 </div>
 ```
 
 **使用上の注意:**
 - YouTube の再生数は公開APIなしでは正確に取得不可。外部メディアや推定値で代替する。
+- ショートはYouTube Shorts日本展開（2021年9月）以降の動画のみ対象。
 - 情報が十分でない場合は個別動画リストを省略し「テーマパターン集計」のみにする。
 - 必ず「推定値」の注記を入れること（冒頭のサブテキストに記載済み）。
+
+---
+
+## ショート/ロング分割動画テーブルパターン
+
+直近1ヶ月・小規模バズ A・小規模バズ B・ジャンル外バズの各セクションに使用する2段構成テーブル。
+
+```html
+<!-- ショートテーブル -->
+<div class="mb-4">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full">ショート（〜60秒）</span>
+    <span class="text-xs text-gray-400">※推定分類</span>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-pink-600 text-white">
+          <th class="text-left px-3 py-2 font-bold text-xs rounded-tl-lg">#</th>
+          <th class="text-left px-3 py-2 font-bold text-xs">動画タイトル</th>
+          <th class="text-left px-3 py-2 font-bold text-xs">チャンネル名</th>
+          <th class="text-left px-3 py-2 font-bold text-xs">再生数（推定）</th>
+          <!-- 列は用途に応じて追加 -->
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-100">
+        <tr class="bg-pink-50">
+          <td class="px-3 py-2.5 text-gray-500 text-xs">1</td>
+          <td class="px-3 py-2.5 font-medium text-gray-800">【タイトル】</td>
+          <td class="px-3 py-2.5 text-gray-600 text-xs">【チャンネル名】</td>
+          <td class="px-3 py-2.5"><span class="bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded-full font-bold">約◯万</span></td>
+        </tr>
+        <!-- 最大10行繰り返す -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ロングテーブル（直近1ヶ月用: green-800 / 小規模バズ用: amber-700 / ジャンル外バズ用: blue-700） -->
+<div class="mb-4">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="bg-green-800 text-white text-xs font-bold px-3 py-1 rounded-full">ロング（3分超）</span>
+    <span class="text-xs text-gray-400">※推定分類</span>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-green-800 text-white">
+          <th class="text-left px-3 py-2 font-bold text-xs rounded-tl-lg">#</th>
+          <th class="text-left px-3 py-2 font-bold text-xs">動画タイトル</th>
+          <th class="text-left px-3 py-2 font-bold text-xs">チャンネル名</th>
+          <th class="text-left px-3 py-2 font-bold text-xs">尺（推定）</th>
+          <th class="text-left px-3 py-2 font-bold text-xs rounded-tr-lg">再生数（推定）</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-100">
+        <tr class="bg-green-50">
+          <td class="px-3 py-2.5 text-gray-500 text-xs">1</td>
+          <td class="px-3 py-2.5 font-medium text-gray-800">【タイトル】</td>
+          <td class="px-3 py-2.5 text-gray-600 text-xs">【チャンネル名】</td>
+          <td class="px-3 py-2.5 text-gray-400 text-xs">13分</td>
+          <td class="px-3 py-2.5"><span class="bg-red-100 text-red-700 text-xs px-2 py-0.5 rounded-full font-bold">約◯万</span></td>
+        </tr>
+        <!-- 最大10行繰り返す -->
+      </tbody>
+    </table>
+  </div>
+</div>
+```
+
+**カラールール（ロングテーブルのヘッダー色）:**
+| セクション | ロングヘッダー色 |
+|---|---|
+| 直近1ヶ月 | `bg-green-800` |
+| 小規模バズ A（過去7年同月） | `bg-amber-700` |
+| 小規模バズ B（直近2ヶ月急伸中） | `bg-orange-600` |
+| ジャンル外バズ | `bg-blue-700` |
+| 過去5年・同時期 | `bg-gray-600` |
 
 ---
 

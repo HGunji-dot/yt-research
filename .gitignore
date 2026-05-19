@@ -4,3 +4,8 @@ node_modules/
 **/node_modules/
 package-lock.json
 **/package-lock.json
+
+# YouTube API credentials & generated data
+.env
+**/.env
+.claude/skills/YT-reseach/output/api_shorts_*.json
